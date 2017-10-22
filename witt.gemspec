@@ -11,22 +11,12 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Ruby world clock on your terminal"
   spec.description   = "Ruby world clock on your terminal"
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/pedrovereza/witt"
   spec.license       = "MIT"
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  end
-
-  spec.files         = Dir["lib/**/*"] + %w(bin/witt README.md LICENSE)
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.files         = Dir["lib/**/*"] + %w(bin/witt README.md LICENSE.txt)
   spec.require_paths = ["lib"]
-  spec.executables << "witt"
+  spec.executables   = ["witt"]
 
   spec.add_runtime_dependency "tzinfo", "~> 1.0"
 
