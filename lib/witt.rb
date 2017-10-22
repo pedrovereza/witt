@@ -1,5 +1,4 @@
-require "witt/version"
+require "tzinfo"
 
-module Witt
-  extend self
-end
+require "witt/version"
+require "witt/world_clock"
