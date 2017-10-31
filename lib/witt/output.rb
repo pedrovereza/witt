@@ -5,13 +5,13 @@ module Witt
       formatted_time = time.strftime("%b %e, %H:%M")
       emoji = to_emoji(time)
 
-      puts "#{iata_code}: #{emoji}  #{formatted_time} (#{timezone})"
+      puts "#{iata_code}: #{emoji} #{formatted_time} (#{timezone})"
     end
 
     private
 
     def to_emoji(time)
-      is_evening?(time) ? "🌘" : "☀️ "
+      is_evening?(time) ? "🌘 " : "☀️ "
     end
 
     def is_evening?(time)
