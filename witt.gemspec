@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Pedro Vereza"]
   spec.email         = ["pdrvereza@gmail.com"]
 
-  spec.summary       = "Ruby world clock on your terminal"
-  spec.description   = "Ruby world clock on your terminal"
+  spec.summary       = "What Is The Time - Ruby world clock on your terminal"
+  spec.description   = "Quickly check current time in different timezones without leaving your beloved terminal."
   spec.homepage      = "https://github.com/pedrovereza/witt"
   spec.license       = "MIT"
 
