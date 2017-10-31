@@ -3,4 +3,5 @@ $LOAD_PATH.push File.expand_path("../../lib", __FILE__)
 
 require 'witt'
 
-Witt::WorldClock.new.time_in('America/Los_Angeles')
+airports = ARGV
+Witt.time_in(airports)
