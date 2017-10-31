@@ -1,5 +1,5 @@
 module Witt
-  class AirportCodes
+  extend self
     @IATA = {
       "3BB" => "America/Detroit",
       "AAA" => "Pacific/Tahiti",
@@ -9143,5 +9143,4 @@ module Witt
       "ZZU" => "Africa/Blantyre",
       "ZZV" => "America/New_York"
     }
-  end
 end
