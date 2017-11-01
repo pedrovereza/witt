@@ -14,7 +14,7 @@ module Witt
 
     airports.each do |airport|
       airport = airport.upcase
-      timezone = @IATA[airport]
+      timezone = Witt::IATA[airport]
       time = world_clock.time_in(timezone)
 
       output.print(time, airport, timezone)

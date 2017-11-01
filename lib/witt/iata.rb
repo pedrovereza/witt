@@ -1,6 +1,5 @@
 module Witt
-  extend self
-    @IATA = {
+    IATA = {
       "3BB" => "America/Detroit",
       "AAA" => "Pacific/Tahiti",
       "AAB" => "Australia/Brisbane",
