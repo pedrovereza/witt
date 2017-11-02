@@ -19,4 +19,12 @@ describe Witt::Output do
       subject.print(time, 'POA', 'America/Sao_Paulo')
     end
   end
+
+  context 'when given invalid airport codes' do
+    it 'prints an error message in red' do
+      expect(STDOUT).to receive(:puts).with("\e[31m\nNo time zone info found for: invalid, code\e[0m")
+
+      subject.print_error(['invalid, code'])
+    end
+  end
 end

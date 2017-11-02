@@ -12,12 +12,19 @@ module Witt
     world_clock = WorldClock.new
     output = Output.new
 
+    invalid_airports = []
+
     airports.each do |airport|
       airport = airport.upcase
       timezone = Witt::IATA[airport]
-      time = world_clock.time_in(timezone)
-
-      output.print(time, airport, timezone)
+      begin
+        time = world_clock.time_in(timezone)
+        output.print(time, airport, timezone)
+      rescue
+        invalid_airports << airport
+      end
     end
+
+    output.print_error(invalid_airports) unless invalid_airports.empty?
   end
 end
