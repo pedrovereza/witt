@@ -14,13 +14,22 @@ $ gem install witt
 
 ## Usage
 
-Call it passing as many airport codes as you want, and it will give you the time at each airport:
+Call it passing as many city codes as you want, and it will give you the time at each city:
 
 ```
-$ witt jfk lhr rus
-JFK: ☀️  Oct 31, 14:23 (America/New_York)
-LHR: ☀️  Oct 31, 18:23 (Europe/London)
-RUS: 🌘  Nov  1, 05:23 (Pacific/Guadalcanal)
+$ witt poa nyc lon
+POA: ☀️  Mar 15, 17:13 (America/Sao_Paulo)
+NYC: ☀️  Mar 15, 16:13 (America/New_York)
+LON: 🌘  Mar 15, 20:13 (Europe/London)
+```
+
+It also takes airport codes:
+
+```
+$ witt poa jfk lhr
+POA: ☀️  Mar 15, 17:13 (America/Sao_Paulo)
+JFK: ☀️  Mar 15, 16:13 (America/New_York)
+LHR: 🌘  Mar 15, 20:13 (Europe/London)
 ```
 
 ## Contributing
