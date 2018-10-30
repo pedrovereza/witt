@@ -32,11 +32,6 @@ JFK: ☀️  Mar 15, 16:13 (America/New_York)
 LHR: 🌘  Mar 15, 20:13 (Europe/London)
 ```
 
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/pedrovereza/witt.
-
-
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
